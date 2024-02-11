@@ -3,9 +3,9 @@ import numpy as np
 
 def get_gini_index(incomes):
     """
-    :param incomes: (list[float]) a list of incomes
+    :param (list[float]) incomes: (list[float]) a list of incomes
 
-    :return: gini index, measures inequality of income
+    :return float: gini index, measures inequality of income
     """
     mean = np.mean(incomes)
     n = len(incomes)
