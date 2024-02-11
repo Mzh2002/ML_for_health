@@ -5,7 +5,7 @@ def get_gini_index(incomes):
     """
     :param (list[float]) incomes: (list[float]) a list of incomes
 
-    :return float: gini index, measures inequality of income
+    :return: gini index, measures inequality of income
     """
     mean = np.mean(incomes)
     n = len(incomes)
