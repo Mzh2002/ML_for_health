@@ -1,6 +1,6 @@
 import numpy as np
 
-def calculate_spatial_dissimilarity_index(CN_ij, CN_i, CN_j, CN, CP_j):
+def get_segregation_index(CN_ij, CN_i, CN_j, CN, CP_j):
     """
     Calculate the Spatial Dissimilarity Index (SD).
 
@@ -28,5 +28,5 @@ CN_j = np.array([300, 450, 750])                      # Total composite populati
 CN = 1500                                             # Total population in the city
 CP_j = CN_j / CN                                      # Proportion of population in each ethnic group
 
-sd_index = calculate_spatial_dissimilarity_index(CN_ij, CN_i, CN_j, CN, CP_j)
+sd_index = get_segregation_index(CN_ij, CN_i, CN_j, CN, CP_j)
 print(f"The Spatial Dissimilarity Index is: {sd_index}")
